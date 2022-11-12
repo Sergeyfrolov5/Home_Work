@@ -14,7 +14,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 
 void Digit(int num)
 {
-    if (n < 100000 && n >= 10000)
+    if (num < 100000 && num >= 10000)
     {
         int firstDigit = num / 10000;
         int seondDigit = num / 1000 % 10;
