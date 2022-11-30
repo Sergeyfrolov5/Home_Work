@@ -54,16 +54,16 @@ int[] CreateArray(int[,] matrix)
     return array;
 }
 
-// void PrintArray(int[] array)
-// {
-//     Console.Write("[");
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (i < array.Length - 1) Console.Write($"{array[i]}, ");
-//         else Console.Write($"{array[i]}");
-//     }
-//     Console.WriteLine("]");
-// }
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]}");
+    }
+    Console.WriteLine("]");
+}
 
 int FindMinRow(int[] array)
 {
@@ -82,7 +82,7 @@ int[,] createMatrixRndInt = CreateMatrixRndInt(3, 4, 10, 99);
 PrintMatrix(createMatrixRndInt);
 Console.WriteLine();
 int[] createArray = CreateArray(createMatrixRndInt);
-// PrintArray(createArray);
+PrintArray(createArray);
 int findMinRow = FindMinRow(createArray);
 Console.WriteLine($"Строка с наименьшей суммой элементов -> {findMinRow}");
 
